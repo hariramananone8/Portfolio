@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>     
+        .name{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 45%;
+            gap: 10px;
+
+        }
+    
+        .grid-card1{      
+            height: 600px;
+            width: 500px;
+            background-color: #f3f7ff; 
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        .grid-card1 img{
+            margin-top: 30px;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .grid-card1 img.logo{
+            display: flex;
+            align-content: center;
+            position: relative;
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+
+
+        }
+        .grid-card1 h2{
+            font-family: 'Trebuchet MS', sans-serif ;
+            font-size: 20;
+            font-weight: bold;
+            margin-left: 10;
+        }
+        .grid-content{
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            margin-left: 20px;
+            width: 700PX;
+            background-color: #f3f7ff;
+            padding: 20px;
+            text-align: center;   
+            border-radius: 10px;
+           box-shadow: #000000;        
+        }
+                .title {
+                font-size: 2rem;
+                margin-bottom: 10px;
+                text-align: center; 
+                    }
+        .icon{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            gap : 10px
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+.next-button {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #1b5bff;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.next-button:hover {
+    background-color: #f3f7ff;
+    border: 1px solid #1b5bff; 
+    color: #000000;
+}
+
+        .basecrid{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex; justify-content: center;
+            gap: 20px;
+            height: fit-content;
+            margin: 20px;
+        }
+        .info{
+            display: block;
+            justify-content: center;
+            text-align: left;
+            color: #163686;
+        }
+        .info-p{
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size: larger;
+            font-family:  ubunto sans-serif;
+            margin-bottom: 50px;
+            color:#163686;
+            border: #e0eaff ;
+        }
+        .card-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;;
+    width: 80%;
+    max-width: 1200px;
+}
+.skill{
+    display: flex; justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+   
+    border-radius: 4px;
+}
+
+.card-title {
+    margin-top: 12px;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+        body{
+            width: 100%;
+         background-color: #ffffff;
+            
+        }
+        .header {
+           position: sticky;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color:  #2865ff;
+            color: #ffffff;
+            height: 100px;
+        }
+        .header h4 {
+            margin-right: 35px;
+        }
+        .nav {
+            position: sticky;
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            position: sticky;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-right: 12px;
+            align-items: flex-end;
+            align-content: center;
+            justify-content: flex-end;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #004cf1;
+            color: #ffffff;
+           
+        }
+        ul{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+       ul li {
+        color: #ffffff;
+        display: grid;
+        place-content: center;
+        margin: 0;
+        }
+        .name{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 45%;
+            gap: 10px;
+
+        }       
+footer {
+    background: #2865ff;
+    padding: 40px 0;
+}
+
+
+.social-link ul li img {
+    width: 45px;
+    scale: 0.5;
+    gap: 40px;
+    filter: invert(1);
+}
+
+.social-link ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.copyright p {
+    font-size: 1.10rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.social-link {
+    margin: 0 0 30px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="name">
+        <h1 style=" font-family: 'Trebuchet MS', sans-serif;color: ">Hariramanan SJ | </h1>
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Front end developer</h4>
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\portfoliohome.html" class="menu">ABOUT</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\resume.html" class="menu">RESUME</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\project.html" class="menu">PROJECTS</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\contact.html" class="menu">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="basecrid">
+        <div class="grid-card1">
+                <img src="C:\Users\CCLAB\Downloads\profile.jpg" alt="profile">
+                <div class="img-content">
+                <h2 style="color: #163686;">Hariramanan</h2>
+                <h4 style="color: #163686;">front end developer</h4>
+                <div class="welcome">
+                 <img src="C:\Users\CCLAB\Pictures\hello\rafiki.png">
+                </div>
+        </div>
+        </div>
+        <div class="grid-content">
+                <div class="contentgrid">
+                    <h2 class="title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 2cm;text-align: left;padding: 0%;color: #163686;">Hello</h2>
+                    <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: left;color: #163686;">Professional Summary</h3>
+                    <p class="summary" style=" font-family: ubunto sans-serif;font-size: large;padding-bottom: 40px;text-align: left;color:#163686;">
+                        As a passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript, I am eager to contribute to a dynamic team. My goal is to leverage my skills in modern frameworks like React and Vue.js to create engaging, user-friendly web applications. I am committed to continuous learning and am excited to tackle new challenges to help build innovative solutions and enhance user experiences.
+                    </p>
+                    <div class="buttons" >
+                        <a href="C:\Users\CCLAB\Desktop\front end\portfolio\resume.html" class="next-button">Resume</a>
+                        <a href="C:\Users\CCLAB\Desktop\front end\portfolio\project.html" class="next-button">Project</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="info">
+        <h1 style="margin-top: 50px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:  #000000;text-align: center;">What i do</h1>
+        <p class="info-p">
+            As a passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript, I am eager to contribute to a dynamic team. My goal is to leverage my skills in modern frameworks like React and Vue.js to create engaging, user-friendly web applications. I am committed to continuous learning and am excited to tackle new challenges to help build innovative solutions and enhance user experiences.
+        </p>
+    </div>
+    <h1 style="margin-top: 70px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:  #000000;text-align: center;">Services Provided</h1>
+    <div class="skill">
+        <div class="card-container1">
+            <div class="card">
+                <img src="C:\Users\CCLAB\Pictures\amico.png" alt="Image 1" class="card-image">
+                <h2 class="card-title">UI UX DESIGN</h2>
+            </div>
+            <div class="card">
+                <img src="C:\Users\CCLAB\Pictures\amico.png" alt="Image 2" class="card-image">
+                <h2 class="card-title">WEB DESIGN</h2>
+            </div>
+            <div class="card">
+                <img src="C:\Users\CCLAB\Pictures\cuate.png" alt="Image 3" class="card-image" style="width: 80%;height: 80%;">
+                <h2 class="card-title" style="margin-top: 25px;">PRODUCT DESIGN</h2>
+            </div>
+        </div>
+    </div>
+            <br>
+            <footer>
+                <div class="container">
+                  <div class="social-link">
+                    <ul class="">
+                      <li><a href="tel:6379762140"><img src="C:\Users\CCLAB\Downloads\mdi_contact.png" alt></a></li>
+                      <li><a href="mailto:hariramanan20@gmail.com"><img src="C:\Users\CCLAB\Downloads\ic_baseline-email.png" alt></a></li>
+                              <li><a href="https://www.linkedin.com/in/hariramanan"><img src="C:\Users\CCLAB\Downloads\brandico_linkedin-rect (2).png" alt></a></li>
+                              <li><a href="https://www.instagram.com/hari._.one8?igsh=YmY0OTFjZDQ2dWF4"><img src="C:\Users\CCLAB\Downloads\simple-icons_instagram.png" alt></a></li>
+                              <li><a href="https://github.com/hariramananone8"><img src="C:\Users\CCLAB\Downloads\mdi_github (1).png" alt></a></li>
+                    </ul>
+                  </div>
+                  <div class="copyright">
+                    <p>© 2024 Hariramanan. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </footer>
+              
+              <script>
+                
+ </script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+      
+
+      body{
+            width: 100%;
+         background-color: #ffffff;
+            
+        }
+        .header {
+           position: sticky;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color:  #2865ff;
+            color: #ffffff;
+            height: 100px;
+        }
+        .header h4 {
+            margin-right: 35px;
+        }
+        .nav {
+            position: sticky;
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            position: sticky;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-right: 12px;
+            align-items: flex-end;
+            align-content: center;
+            justify-content: flex-end;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #004cf1;
+            color: #ffffff;
+           
+        }
+        ul{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+       ul li {
+        color: #ffffff;
+        display: grid;
+        place-content: center;
+        margin: 0;
+        }
+        .name{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 45%;
+            gap: 10px;
+
+        }       
+footer {
+    background: #2865ff;
+    padding: 40px 0;
+    color:white;
+}
+
+
+.social-link ul li img {
+    width: 45px;
+    scale: 0.5;
+    gap: 40px;
+    filter: invert(1);
+}
+
+.social-link ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.10rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.social-link {
+    margin: 0 0 30px;
+}
+.basegrid1{
+            display: flex; justify-content: center;
+            gap: 20px;
+            height: fit-content;
+            margin: 20px;
+}
+.edu-card{      
+            
+            height: 200px;
+            width: 300px;
+            background-color: #f3f7ff; 
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        }
+        .edu-card h1{
+            color: #163686;
+            text-align: left;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .edu-card h3{
+            color:#163686d5;
+            text-align: left;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .skills{
+            height: 50px;
+            width: 150px;
+            background-color: #1356ff;
+            font-size: larger;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            gap: 20px;
+            border: 0cap;
+        }
+        .headcard{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .grid-card1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cv-button {
+        width: 100px;
+        font-size: 0.9rem;
+    }
+
+    .card-container1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .info-p {
+        font-size: 0.9rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}  
+.meta-card {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 10px;
+    height: 100vh; 
+   
+}
+
+
+.card1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card-image1 {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+.card-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    .meta-card {
+        gap: 15px; 
+    }
+    
+    .card1 {
+        width: 200px; 
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1em; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="name">
+        <h1 style=" font-family: 'Trebuchet MS', sans-serif;color: ">Hariramanan SJ | </h1>
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Front end developer</h4>
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\portfoliohome.html" class="menu">ABOUT</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\resume.html" class="menu">RESUME</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\project.html" class="menu">PROJECTS</a></li>
+            <li><a href="C:\Users\CCLAB\Desktop\front end\portfolio\contact.html" class="menu">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="margin-top: 50px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:  #000000;text-align: center;">Education</h1>
+        <div class="basegrid1">
+               
+                <div class="edu-card">
+                    <h1>SSLC :</h1>
+                    <h3>R G Metric higher secondary school</h3>
+                    <h3>2017-18</h3>
+                    <h3>Score : 78%</h3>
+                </div>
+                <div class="edu-card">
+                    <h1>DIPLOMA IN AUTOMOBILE ENGINEERING</h1>
+                    <h3>Natchimuthu Polytechnic College</h3>
+                    <h3>2018-21</h3>
+                    <h3>Score : 85%</h3>
+                </div>
+                <div class="edu-card">
+                    <h1>B.TECH ARTIFICIEL INTELLIGENCE AND DATA SCEINEC</h1>
+                    <h3>DR. Mahalingam College Of Engineering and Technology</h3>
+                    <h3>2022-25</h3>
+                    <h3>CGPA : 74.4*</h3>
+                </div>
+        </div>
+        <h1 style="margin-top: 50px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:  #000000;text-align: center;">Skills</h1>
+        <div class="headcard">
+        <div class="base-card-img">
+        </div>
+        <div class="base-card">
+        <div class="basegrid1">
+            <button class="skills" type="button">HTML</button>
+            <button class="skills" type="button">CSS</button>
+            <button class="skills" type="button">JAVASCRIPT</button>
+            <button class="skills" type="button">C</button>
+        </div>
+        <div class="basegrid1">
+            <button class="skills" type="button">JAVA</button>
+            <button class="skills" type="button">SQL</button>
+            <button class="skills" type="button">FIGMA</button>
+            <button class="skills" type="button">WORDPRESS</button>
+        </div>
+        </div>
+        </div>
+        <h1 style="margin-top: 50px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:  #000000;text-align: center;">Certificates</h1>
+        <br>
+        <div class="meta-card">
+            <div class="card1">
+                <img src="C:\Users\CCLAB\Pictures\certification\pana.png" alt="Image 1" class="card-image1">
+                <h2 class="card-title">TCS ION CAREER EDGE PROFESSIONAL</h2>
+            </div>
+            <div class="card1">
+                <img src="C:\Users\CCLAB\Pictures\certification\pana.png" alt="Image 2" class="card-image1">
+                <h2 class="card-title">GOOGLE UI UX DESIGN</h2>
+            </div>
+            <div class="card1">
+                <img src="C:\Users\CCLAB\Pictures\certification\pana.png" alt="Image 3" class="card-image1">
+                <h2 class="card-title">FRONT END DEVELOPMENT BY META</h2>
+            </div>
+        </div>
+        
+            <footer>
+                <div class="container">
+                  <div class="social-link">
+                    <ul class="">
+                      <li><a href="tel:6379762140"><img src="C:\Users\CCLAB\Downloads\mdi_contact.png" alt></a></li>
+                      <li><a href="mailto:hariramanan20@gmail.com"><img src="C:\Users\CCLAB\Downloads\ic_baseline-email.png" alt></a></li>
+                              <li><a href="https://www.linkedin.com/in/hariramanan"><img src="C:\Users\CCLAB\Downloads\brandico_linkedin-rect (2).png" alt></a></li>
+                              <li><a href="https://www.instagram.com/hari._.one8?igsh=YmY0OTFjZDQ2dWF4"><img src="C:\Users\CCLAB\Downloads\simple-icons_instagram.png" alt></a></li>
+                              <li><a href="https://github.com/hariramananone8"><img src="C:\Users\CCLAB\Downloads\mdi_github (1).png" alt></a></li>
+                    </ul>
+                  </div>
+                  <div class="copyright">
+                    <p>© 2024 Hariramanan. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </footer>
+
+<script>
+
+ </script>
+
+</body>
+</html>
